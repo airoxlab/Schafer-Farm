@@ -190,7 +190,7 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
   <symbol id="i-hand" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
 </svg>
 
-<header>
+<header data-section="Top">
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="Schafer Farm home">
       <span class="brand-mark"><svg><use href="#i-barn"/></svg></span>
@@ -203,19 +203,19 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
       <a href="#order">Text an order</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-barn" href="tel:+17405093615"><svg><use href="#i-phone"/></svg><span>(740) 509-3615</span></a>
+    <a class="btn btn-barn" href="tel:+17405093615" data-track="Call · Top"><svg><use href="#i-phone"/></svg><span>(740) 509-3615</span></a>
   </div>
 </header>
 
 <main id="top">
-  <section class="hero" aria-label="Welcome">
+  <section class="hero" aria-label="Welcome" data-section="Hero">
     <img src="img/hero-round-bales.jpg" alt="Round hay bales lined up in a cut field under a blue sky" fetchpriority="high">
     <div class="wrap">
       <span class="eyebrow">Family farm · Southeast Ohio</span>
       <h1>Feed for your animals, straight from the farm.</h1>
       <p>Schafer Farm supplies animal feed to neighbors and fellow farmers in southeast Ohio. One call or text tells you what's on hand this week and what it costs.</p>
       <div class="hero-ctas">
-        <a class="btn btn-barn" href="tel:+17405093615"><svg><use href="#i-phone"/></svg>Call (740) 509-3615</a>
+        <a class="btn btn-barn" href="tel:+17405093615" data-track="Call · Hero"><svg><use href="#i-phone"/></svg>Call (740) 509-3615</a>
         <a class="btn btn-ghost" href="#order"><svg><use href="#i-msg"/></svg>Text us what you need</a>
       </div>
     </div>
@@ -230,7 +230,7 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
     </ul>
   </div>
 
-  <section class="sec" id="about">
+  <section class="sec" id="about" data-section="The farm">
     <div class="wrap about">
       <div class="about-photos">
         <img src="img/bale-close.jpg" alt="Close view of a round hay bale in a stubble field" loading="lazy">
@@ -242,12 +242,12 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
         <h2>A farm-direct feed source, a phone call away.</h2>
         <p class="lead">When the animals need feeding, you shouldn't have to drive an hour to a farm store.</p>
         <p>Schafer Farm is a family operation in Ohio's 740 country selling animal feed straight off the farm. There's no warehouse and no call center. You talk to the people who handle the feed.</p>
-        <p>Supply changes with the season, so the quickest way to find out what's ready is to call or text <a href="tel:+17405093615"><strong>(740) 509-3615</strong></a>. You'll get a straight answer on what's here, how much there is and the price.</p>
+        <p>Supply changes with the season, so the quickest way to find out what's ready is to call or text <a href="tel:+17405093615" data-track="Call · The farm"><strong>(740) 509-3615</strong></a>. You'll get a straight answer on what's here, how much there is and the price.</p>
       </div>
     </div>
   </section>
 
-  <section class="sec feeds" id="feeds">
+  <section class="sec feeds" id="feeds" data-section="Feed by animal">
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">Feed</span>
@@ -279,14 +279,14 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
           <div class="in">
             <h3>Not sure what you need?</h3>
             <p>Call and tell us about your animals. We'll tell you what we have, and if we don't carry it we'll say so.</p>
-            <a class="btn" href="tel:+17405093615"><svg><use href="#i-phone"/></svg>(740) 509-3615</a>
+            <a class="btn" href="tel:+17405093615" data-track="Call · Feed by animal"><svg><use href="#i-phone"/></svg>(740) 509-3615</a>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="how">
+  <section class="sec" id="how" data-section="How it works">
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">How it works</span>
@@ -300,15 +300,15 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
     </div>
   </section>
 
-  <section class="sec order" id="order">
+  <section class="sec order" id="order" data-section="Text-an-order form">
     <div class="wrap order-box">
       <div>
         <span class="eyebrow">Text an order</span>
         <h2>Send us your list in one text.</h2>
         <p>Choose your animals, add how much you need, and tap <strong>Text it</strong>. Your phone opens a message to Schafer Farm with everything filled in, and you just hit send.</p>
-        <p>Rather talk? Call <a href="tel:+17405093615"><strong>(740) 509-3615</strong></a>.</p>
+        <p>Rather talk? Call <a href="tel:+17405093615" data-track="Call · Text-an-order form"><strong>(740) 509-3615</strong></a>.</p>
       </div>
-      <form id="orderForm" novalidate>
+      <form id="orderForm" novalidate name="Text order builder">
         <fieldset>
           <legend>What are you feeding?</legend>
           <div class="chips" id="animals">
@@ -328,15 +328,15 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
         <textarea id="details" placeholder="e.g. 12 head of beef cattle, need enough for two weeks"></textarea>
         <p class="preview" id="preview" aria-live="polite" style="margin-top:16px"></p>
         <div class="form-actions">
-          <a class="btn btn-barn" id="sendText" href="sms:+17405093615"><svg><use href="#i-msg"/></svg>Text it</a>
-          <a class="btn btn-ghost" href="tel:+17405093615"><svg><use href="#i-phone"/></svg>Or call</a>
+          <a class="btn btn-barn" id="sendText" href="sms:+17405093615" data-track="Text · Text-an-order form"><svg><use href="#i-msg"/></svg>Text it</a>
+          <a class="btn btn-ghost" href="tel:+17405093615" data-track="Call · Text-an-order form"><svg><use href="#i-phone"/></svg>Or call</a>
         </div>
         <p class="form-note">Nothing is sent from this page. It just opens a text on your phone.</p>
       </form>
     </div>
   </section>
 
-  <section class="sec" id="faq">
+  <section class="sec" id="faq" data-section="FAQ">
     <div class="wrap faq">
       <div class="sec-head">
         <span class="eyebrow">Questions</span>
@@ -350,26 +350,26 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
     </div>
   </section>
 
-  <section class="contact" id="contact" aria-label="Contact">
+  <section class="contact" id="contact" aria-label="Contact" data-section="Contact band">
     <img src="img/farm-hills.jpg" alt="Farmstead with a red barn and silo among rolling Ohio fields" loading="lazy">
     <div class="wrap">
       <span class="eyebrow">Call or text</span>
       <h2>Animals to feed? We'll tell you what's here.</h2>
       <p>One quick call gets you what's available, the price and a pickup time.</p>
-      <a class="big-phone" href="tel:+17405093615">(740) 509-3615</a>
+      <a class="big-phone" href="tel:+17405093615" data-track="Call · Contact band">(740) 509-3615</a>
       <div class="hero-ctas">
-        <a class="btn btn-barn" href="tel:+17405093615"><svg><use href="#i-phone"/></svg>Call now</a>
-        <a class="btn btn-ghost" href="sms:+17405093615"><svg><use href="#i-msg"/></svg>Send a text</a>
+        <a class="btn btn-barn" href="tel:+17405093615" data-track="Call · Contact band"><svg><use href="#i-phone"/></svg>Call now</a>
+        <a class="btn btn-ghost" href="sms:+17405093615" data-track="Text · Contact band"><svg><use href="#i-msg"/></svg>Send a text</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
+<footer data-section="Footer">
   <div class="wrap foot">
     <div>
       <b>Schafer Farm</b>
-      <p>Animal feed · Southeast Ohio · <a href="tel:+17405093615">(740) 509-3615</a></p>
+      <p>Animal feed · Southeast Ohio · <a href="tel:+17405093615" data-track="Call · Footer">(740) 509-3615</a></p>
       <p>Photos are representative stock photography from Unsplash, not pictures of Schafer Farm.</p>
       <p>&copy; <span id="yr">2026</span> Schafer Farm</p>
     </div>
@@ -377,7 +377,7 @@ footer{background:var(--paper-2);border-top:1px solid var(--line);padding:36px 0
   </div>
 </footer>
 
-<a class="btn btn-barn call-fab" href="tel:+17405093615" aria-label="Call Schafer Farm"><svg><use href="#i-phone"/></svg>Call</a>
+<a class="btn btn-barn call-fab" href="tel:+17405093615" aria-label="Call Schafer Farm" data-track="Call · Floating button"><svg><use href="#i-phone"/></svg>Call</a>
 
 <script>
 (function(){
